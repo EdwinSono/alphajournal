@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'futura';
+  src: url('../fonts/futura-t-ot-book.eot?') format('eot'), url('../fonts/futura-t-ot-book.woff') format('woff'), url('../fonts/futura-t-ot-book.ttf') format('truetype');
+}
+.bg-white{
+	background-color: #FFFFFF;
+}
+.bg-grey{
+	background-color: #E3F4F4;
+}
+.bg-blue{
+	background-color: #478ECA;
+}
+body{
+	font-family: futura, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.btn{
+	border-radius: 30px;
+	background-color: #478ECA;
+	border: 1px solid #478ECA;
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 12px 30px;
+	text-decoration: none;
+}
+.circle img{
+	border: 15px solid #27deb8;
+	border-radius: 50%;
+    width: 160px;
+}
+.cnt-img{
+	padding: 20px 10px;
+}
+h1{
+	color: #478ECA;
+}
+h2{
+	color: #478ECA;
+}
+h3{
+	color: #FFFFFF;	
+}
+h3 strong{
+	text-decoration: underline;
+	color: #FFFFFF;
+	text-decoration-color: #27deb8;
+}
+img{
+	width: 100%;
+}
+.content{
+	padding: 20px; 
+}
+p{
+	text-align: justify;
+	line-height: 1.3rem;
+}
+p strong{
+	text-decoration: underline;
+	color: #FFFFFF;
+	text-decoration-color: #27deb8;
+}
+section{
+	text-align: center;
+}
+span{
+	color: #478ECA;
+}
+.third{
+	color: #FFFFFF;
+}
