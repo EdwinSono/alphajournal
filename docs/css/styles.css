@@ -42,24 +42,19 @@ h3{
 	color: #FFFFFF;	
 }
 h3 strong{
-	text-decoration: underline;
 	color: #FFFFFF;
-	text-decoration-color: #27deb8;
 }
 img{
 	width: 100%;
 }
 .content{
-	padding: 20px; 
+	padding: 20px;
+	max-width: 320px;
+	margin: 0 auto;
 }
 p{
 	text-align: justify;
 	line-height: 1.3rem;
-}
-p strong{
-	text-decoration: underline;
-	color: #FFFFFF;
-	text-decoration-color: #27deb8;
 }
 section{
 	text-align: center;
@@ -69,4 +64,12 @@ span{
 }
 .third{
 	color: #FFFFFF;
+}
+.third h2{
+	color: #FFFFFF;
+}
+.third h2 strong,
+.third h3 strong,
+.third p strong {
+	border-bottom: 1px solid #27DEB8;
 }

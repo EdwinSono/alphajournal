@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js",
+    "test": "http-server ./docs -p 3000",
     "start": "node server.js"
   },
   "repository": {
