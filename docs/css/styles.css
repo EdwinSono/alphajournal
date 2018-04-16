@@ -50,6 +50,14 @@ body {
 .btn-green{
 	background-color: #27deb8;
 }
+.btn-image{
+	background-color: transparent;
+    border: 0 none;
+}
+.btn-image img{
+	max-width: 180px;
+	display: none;
+}
 .boundaries{
     bottom: 0;
     margin-bottom: 195px;
@@ -97,11 +105,11 @@ img {
 	max-width: 300px;
 }
 #content{
-	max-width: 640px;
 	margin: 0 auto; 
 }
 .content{
 	padding: 20px;
+	max-width: 640px;
 	margin: 0 auto;
 }
 .content-two{
@@ -129,6 +137,9 @@ img {
 .content-third .content{
 	background: url('../images/clouds-eternal-memories.png') bottom center no-repeat;
 }
+.memories{
+	background: url('../images/clouds-eternal-memories.png') bottom center no-repeat;	
+}
 p {
 	text-align: justify;
 	line-height: 1.3rem;
@@ -138,4 +149,38 @@ section {
 }
 span {
 	color: #478ECA;
+}
+.text-center{
+	text-align: center;
+}
+@media (min-width: 767px) {
+	.btn-image img{
+		display: block;
+	}
+}
+@media (min-width: 992px) {
+	.content{
+		max-width: 900px;
+	}
+	.clear{
+		clear: both;
+	}
+	.cnt-left{
+		max-width: 40%;
+		text-align: justify;
+	}
+	img {
+	    max-width: 400px;
+	}
+	.left{
+		float: left;
+	}
+	.right{
+		float: right;
+	}
+}
+@media (min-width: 1200px) {
+	.content{
+		max-width: 1100px;
+	}
 }
