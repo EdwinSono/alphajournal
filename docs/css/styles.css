@@ -10,6 +10,7 @@
 }
 .bg-white {
 	background-color: #FFFFFF;
+	position: relative;
 }
 .bg-blue h2 {
 	color: #FFFFFF;
@@ -122,7 +123,7 @@ img {
     margin-bottom: 0;
 }
 .content-third::before{
-	background-image: url('../images/clouds-top-eternal-memories.png');
+	background-image: url('../images/clouds-top-eternal-subscribtion.png');
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-color: #FFFFFF;
@@ -135,10 +136,12 @@ img {
 	background-color: #E3F2F4;
 }
 .content-third .content{
-	background: url('../images/clouds-eternal-memories.png') bottom center no-repeat;
+	background: url('../images/clouds-eternal-subscribtion.png') bottom center no-repeat;
 }
-.memories{
-	background: url('../images/clouds-eternal-memories.png') bottom center no-repeat;	
+.subscribtion{
+	background-image: url('../images/clouds-eternal-subscribtion.png');
+	background-position: bottom center;
+	background-repeat: no-repeat;	
 }
 p {
 	text-align: justify;
@@ -150,27 +153,92 @@ section {
 span {
 	color: #478ECA;
 }
+.testimonials{
+	background-image: url('../images/bg-testimonials.png');
+	background-position: top center;
+	background-repeat: no-repeat;	
+}
+.testimonials p{
+	max-width: 450px;
+    margin: 15px auto;
+    text-align: center;
+}
 .text-center{
 	text-align: center;
 }
+.img-boundaries .desktop-img{
+	display: none;
+}
 @media (min-width: 767px) {
+	.subscribtion .content {
+	    margin: 0 auto;
+	    max-width: 470px;
+	}
+	.subscribtion::before{
+		background-image: url('../images/subscribtion-left.png');
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-color: #FFFFFF;
+		content: "";
+		display: inline-block;
+		float: left;
+		padding: 220px 190px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.subscribtion::after{
+		background-image: url('../images/subscribtion-right.png');
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-color: #FFFFFF;
+		content: "";
+		display: inline-block;
+		float: right;
+		padding: 220px 190px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.subscribtion{
+		background: #FFFFFF;
+		clear: both;
+		position: relative;
+		z-index: 9;
+	}
+	.boundaries {
+	    top: 0;
+	    margin-top: 35px;
+	    max-width: 340px;
+	    left: 50%;
+	    margin-left: -170px;
+	}
 	.btn-image img{
 		display: block;
 	}
-}
-@media (min-width: 992px) {
-	.content{
-		max-width: 900px;
-	}
 	.clear{
 		clear: both;
+	}
+	.content{
+		max-width: 900px;
 	}
 	.cnt-left{
 		max-width: 40%;
 		text-align: justify;
 	}
+	.cnt-right{
+		max-width: 40%;
+		text-align: justify;
+	}
 	img {
 	    max-width: 400px;
+	}
+	.img-boundaries .desktop-img{
+		display: block;
+		max-width: 1100px;
+	}
+	.img-boundaries .mobile-img{
+		display: none;
 	}
 	.left{
 		float: left;
@@ -178,6 +246,9 @@ span {
 	.right{
 		float: right;
 	}
+}
+@media (min-width: 992px) {
+
 }
 @media (min-width: 1200px) {
 	.content{
