@@ -48,6 +48,12 @@ body {
 	padding: 12px 30px;
 	text-decoration: none;
 }
+.btn-submit{
+	border-radius: 0;
+	background-color: #FFFFFF;
+	padding: 2px 3px;
+    border: 0;
+}
 .btn-green{
 	background-color: #27DEB8;
 }
@@ -112,8 +118,15 @@ img {
 	max-width: 300px;
 }
 ins{
-	border-bottom: 1px solid #27DEB8;
+	border-bottom: 2px solid #27DEB8;
 	text-decoration: none;
+}
+.item{
+	border-bottom: 2px solid #27DEB8;
+}
+.item h5{
+	color: #478ECA;
+	font-size: 1.3rem;
 }
 #content{
 	margin: 0 auto; 
@@ -145,13 +158,46 @@ ins{
 	position: relative;
 	background-color: #E3F2F4;
 }
-.content-third .content{
-	background: url('../images/clouds-eternal-memories.png') bottom center no-repeat;
+.content-third .bg{
+	background: url('../images/clouds-eternal-memories.png') bottom left no-repeat;
+}
+.input-email{
+	border: 1px solid #FFF;
+    padding: 10px 15px;
+    color: red;
+    width: 240px;
+    border: 0 none;
+}
+label{
+	display: block;
 }
 .subscribtion{
 	background-image: url('../images/clouds-eternal-memories.png');
 	background-position: bottom center;
 	background-repeat: no-repeat;	
+}
+.frecuently{
+	padding-bottom: 50px;
+}
+footer {
+	background-color: #27DEB8;
+	color: #FFFFFF;
+}
+footer .content{
+	position: relative;
+}
+footer .cnt-img{
+	margin-top: -92px;
+    width: 150px;
+    z-index: 9;
+    position: absolute;
+}
+footer .second{
+	margin-left: 194px;
+    width: 534px;
+}
+footer form{
+	text-align: right;
 }
 p {
 	text-align: justify;
@@ -183,6 +229,8 @@ span {
 	.subscribtion .content {
 	    margin: 0 auto;
 	    max-width: 470px;
+		height: 300px;
+    	padding-top: 200px;
 	}
 	.subscribtion::before{
 		background-image: url('../images/subscribtion-left.png');
@@ -192,10 +240,11 @@ span {
 		content: "";
 		display: inline-block;
 		float: left;
-		padding: 220px 190px;
+		padding: 0 190px;
 		position: absolute;
 		left: 0;
 		top: 0;
+		height: 100%;
 	}
 	.subscribtion::after{
 		background-image: url('../images/subscribtion-right.png');
@@ -205,10 +254,11 @@ span {
 		content: "";
 		display: inline-block;
 		float: right;
-		padding: 220px 190px;
+		padding: 0 190px;
 		position: absolute;
 		right: 0;
 		top: 0;
+		height: 100%;
 	}
 	.subscribtion{
 		background: #FFFFFF;
@@ -242,6 +292,9 @@ span {
 	}
 	img {
 	    max-width: 400px;
+	}
+	.item span{
+		display: none;
 	}
 	.img-boundaries .desktop-img{
 		display: block;
