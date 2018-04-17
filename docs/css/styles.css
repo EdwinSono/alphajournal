@@ -48,6 +48,17 @@ body {
 	padding: 12px 30px;
 	text-decoration: none;
 }
+.btn-menu{
+	background-color: #27DEB8;
+    border: 1px solid #27DEB8;
+    border-radius: 0px;
+    padding: 6px 12px;
+}
+.btn-menu span{
+	display: block;
+	color: #FFFFFF;
+	line-height: normal;
+}
 .btn-submit{
 	border-radius: 0;
 	background-color: #FFFFFF;
@@ -170,6 +181,54 @@ ins{
 }
 label{
 	display: block;
+	text-align: left;
+}
+.menu{
+	margin-top: 25px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index:99;
+}
+.menu nav{
+	background-color: #FFFFFF;
+	padding: 10px 20px 20px;
+}
+.menu nav title{
+	color: #27DEB8;
+	display: inline-block;
+	vertical-align: top;
+}
+.menu .show-box{
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 4rem;
+}
+.menu ul{
+	list-style-type: none;
+}
+.menu ul li{
+	position: relative;
+	padding: 8px 0 4px;
+}
+.menu ul li::after{
+	border-bottom: 2px solid #27DEB8;
+	content: "";
+	width: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: #478ECA;
+	white-space: nowrap;
+}
+.menu ul li.m-box a {
+    color: #FFFFFF;
+    background-color: #27DEB8;
+    padding: 6px;
 }
 .subscribtion{
 	background-image: url('../images/clouds-eternal-memories.png');
@@ -198,6 +257,9 @@ footer .second{
 }
 footer form{
 	text-align: right;
+}
+footer .right{
+	width: auto;
 }
 p {
 	text-align: justify;

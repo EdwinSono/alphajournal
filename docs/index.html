@@ -11,8 +11,27 @@
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-<div id="menu">
-	
+<div id="menu" class="menu">
+	<div class="show-box" id="cntOpen">
+		<a class="btn btn-menu" href="#" id="btnMenu"><span class="icono-hamburger"></span><span>Menu</span></a>
+	</div>
+	<nav style="display: none;">
+		<div class="show-box" id="cntClose">
+			<a class="btn btn-menu" href="#" id="btnClose"><span class="icono-cross"></span><span>Close</span></a>
+			<title>Living Alpha Journal</title>
+		</div>
+		<ul class="list">
+			<li><a href="#about">What others say about Living Alpha</a></li>
+			<li><a href="#relationship">Relationship Accounts</a></li>
+			<li><a href="#cc">Carbon Copies</a></li>
+			<li><a href="#boundaries">No boundaries</a></li>
+			<li><a href="#safety">Safety</a></li>
+			<li><a href="#pace">Do it at your own pace</a></li>
+			<li><a href="#album">How would you album look like?</a></li>
+			<li class="m-box"><a href="#trial">Star your free 30 day trial!</a></li>
+			<li><a href="#questions">Frequently asked questions</a></li>
+		</ul>
+	</nav>
 </div>
 <div id="content">
 	<section class="bg-white">
@@ -215,5 +234,7 @@
 		</div>
 	</footer>
 </div>
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js""></script>
+<script type="text/javascript" src="./js/scripts.js"></script>
 </body>
 </html>
