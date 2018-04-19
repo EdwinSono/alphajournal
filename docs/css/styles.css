@@ -2,6 +2,9 @@
   font-family: 'futura';
   src: url('../fonts/futura-t-ot-book.eot?') format('eot'), url('../fonts/futura-t-ot-book.woff') format('woff'), url('../fonts/futura-t-ot-book.ttf') format('truetype');
 }
+a{
+	color: #478ECA;
+}
 .bg-grey {
 	background: linear-gradient(to right, #E6F7FA, #D5F0F3);/*#E3F2F4;*/
 }
@@ -219,6 +222,7 @@ label{
 .menu nav title{
 	color: #27DEB8;
 	display: inline-block;
+	font-size: 1.5rem;
 	vertical-align: top;
 }
 .menu .show-box{
@@ -260,6 +264,10 @@ label{
 .frecuently{
 	padding-bottom: 50px;
 }
+.frecuently h4{
+	color: #27DEB8;
+    font-size: 1.6rem;
+}
 footer {
 	background-color: #27DEB8;
 	color: #FFFFFF;
@@ -267,18 +275,34 @@ footer {
 footer .content{
 	position: relative;
 }
-footer .cnt-img{
-	margin-top: -92px;
-    width: 150px;
-    z-index: 9;
-    position: absolute;
+footer .cnt-img {
+    margin-top: -27px;
+    width: 80px;
+    display: inline-block;
+}
+footer .left{
+	float: left;
+}
+footer .right{
+	float: right;
 }
 footer .second{
-	margin-left: 194px;
-    width: 534px;
+	width: 60%;
+	text-align: center;
 }
-footer form{
-	text-align: right;
+footer .second span{
+	color: #FFFFFF;
+	font-size: 1.6rem;
+}
+footer .second span ins{
+	font-size: 1.2rem;
+	display: block;
+}
+footer .second p{
+	display: none;
+}
+footer form {
+    text-align: center;
 }
 footer .right{
 	width: auto;
@@ -332,6 +356,22 @@ span {
 	.box .item > .right p{
     	margin: 0;
     	padding: 20px 20px 20px 10px;
+	}
+	footer .cnt-img{
+		margin-top: -92px;
+	    width: 150px;
+	    z-index: 9;
+	    position: absolute;
+	}
+	footer .second{
+		margin-left: 194px;
+	    width: 534px;
+	}
+	footer .second p{
+		display: inline-block;
+	}
+	footer form{
+		text-align: right;
 	}
 	.subscribtion .content {
 	    margin: 0 auto;
