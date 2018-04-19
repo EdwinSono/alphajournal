@@ -39,6 +39,32 @@ body {
 	font-family: futura, Helvetica, sans-serif;
 	font-size: 16px;
 }
+.box .item{
+	border-bottom: 2px solid #27DEB8;
+}
+.box .item > .left{
+	float: left;
+	width: 16%;
+}
+.box .item > .right{
+	float: right;
+	text-align: justify;
+	width: 83%;
+}
+.box .item > .right h5{
+	margin: 0;
+	padding-top: 5px;
+}
+.box .item > .right p{
+	margin-top: 0;
+}
+.box .item h5{
+	color: #478ECA;
+	font-size: 1.3rem;
+}
+.box .item:last-child{
+	border: 0 none;
+}
 .btn {
 	border-radius: 30px;
 	background-color: #478ECA;
@@ -78,7 +104,7 @@ body {
 }
 .boundaries{
     bottom: 0;
-    margin-bottom: 195px;
+    margin-bottom: 178px;
     max-width: 255px;
     padding: 10px 30px;
     position: absolute;
@@ -95,6 +121,9 @@ body {
 	border: 15px solid #27DEB8;
 	border-radius: 50%;
     width: 160px;
+}
+.clear{
+	clear: both;
 }
 .cnt-img {
 	padding: 20px 10px;
@@ -131,13 +160,6 @@ img {
 ins{
 	border-bottom: 2px solid #27DEB8;
 	text-decoration: none;
-}
-.item{
-	border-bottom: 2px solid #27DEB8;
-}
-.item h5{
-	color: #478ECA;
-	font-size: 1.3rem;
 }
 #content{
 	margin: 0 auto; 
@@ -288,6 +310,29 @@ span {
 	display: none;
 }
 @media (min-width: 767px) {
+	.box .item > .left{
+		display: none;
+	}
+	.box .item > .right{
+		float: none;
+		width: 100%;
+	}
+	.box .item > .right > .left{
+		float: left;
+		width: 30%;
+	}
+	.box .item > .right > .right{
+		float: right;
+		width: 70%;
+	}
+	.box .item > .right h5{
+	    display: block;
+	    padding: 20px 20px 0 10px;
+	}
+	.box .item > .right p{
+    	margin: 0;
+    	padding: 20px 20px 20px 10px;
+	}
 	.subscribtion .content {
 	    margin: 0 auto;
 	    max-width: 470px;
@@ -298,7 +343,7 @@ span {
 		background-image: url('../images/subscribtion-left.png');
 		background-repeat: no-repeat;
 		background-position: right top;
-		background-color: #FFFFFF;
+		/*background-color: #FFFFFF;*/
 		content: "";
 		display: inline-block;
 		float: left;
@@ -312,7 +357,7 @@ span {
 		background-image: url('../images/subscribtion-right.png');
 		background-repeat: no-repeat;
 		background-position: left top;
-		background-color: #FFFFFF;
+		/*background-color: #FFFFFF;*/
 		content: "";
 		display: inline-block;
 		float: right;
@@ -337,9 +382,6 @@ span {
 	}
 	.btn-image img{
 		display: block;
-	}
-	.clear{
-		clear: both;
 	}
 	.content{
 		max-width: 900px;
@@ -376,7 +418,10 @@ span {
 	}
 }
 @media (min-width: 992px) {
-
+	.frecuently .content{
+		max-width: 60%;
+		margin: 0 auto;
+	}
 }
 @media (min-width: 1200px) {
 	.content{
